@@ -13,9 +13,14 @@ Continuing the takeaway theme, we start with a collection of dish data, held in 
 `[[dish[price, quantity]], [dish2[price2, quantity2]]...] etc.`
 
 Our 'production code' is two methods, `show_quantity` and `show_price` to print this information out. Imagination that
-there's also a ton of other methods that do the same thing in the same manner. 
+there's also a ton of other production methods that do the same thing in the same manner. 
 
 - `bad.rb` contains an example of methods that are heavily coupled to the underlying data structure.
+
+This means that any time the data structure changes, we have to rewrite all of our production methods 
+to make it aware of the changes. And all the tests as well. It's not so bad when there's just two, but if there's
+twenty...
+
 - `less_bad.rb` has the same data structure, but the knowledge of it has been abstracted into other methods.
 
 Once the knowledge of the data structure is hidden from our program, the `show_quantity` and `show_price` methods
