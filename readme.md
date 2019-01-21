@@ -10,9 +10,10 @@ Each file is commented to explain what's going on and the differences between th
 `$ ruby bad.rb`.
 
 Continuing the takeaway theme, we start with a collection of dish data, held in an array of arrays (eek!) i.e.
-`[[dish[price, quantity]], dish2[price2, quantity2]]... etc.`
+`[[dish[price, quantity]], [dish2[price2, quantity2]]...] etc.`
 
-Our 'production code' is two methods, `show_quantity` and `show_price` to print this information out. 
+Our 'production code' is two methods, `show_quantity` and `show_price` to print this information out. Imagination that
+there's also a ton of other methods that do the same thing in the same manner. 
 
 - `bad.rb` contains an example of methods that are heavily coupled to the underlying data structure.
 - `less_bad.rb` has the same data structure, but the knowledge of it has been abstracted into other methods.
