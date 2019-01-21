@@ -12,7 +12,7 @@ end
 
 def show_quantity
   puts "Quantity:\n"
-  get_dishes.each { |dish| p get_name(dish) + " " + get_quantity(dish) }
+  get_dishes.each { |dish| puts get_name(dish) + " " + get_quantity(dish) }
   # @order.each { |dish| puts dish[0] + " " + dish[1][1].to_s } <- for comparison
 end
 
