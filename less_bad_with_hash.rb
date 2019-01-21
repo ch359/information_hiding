@@ -3,8 +3,8 @@
           {'vindaloo': {price: 3.75, quantity: 1}}]
 
 # To prove the point - the @order array now contains a hash of hashes.
-# But we haven't needed to change any # of the methods that use the data.
-# It all still works.
+# But we haven't needed to change any of the methods that use the data.
+# It all still works. No changes to our tests either!
 
 def show_price
   puts "Prices:\n"

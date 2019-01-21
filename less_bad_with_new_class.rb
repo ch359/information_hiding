@@ -1,14 +1,11 @@
 class BaseClass
-
   def initialize
-
     @order = []
     create_classes
-
   end
 
   # Finally we're going to replace the godawful array of hashes of hashes with
-  # an OrderedMeal class. Still no change to our methods.
+  # an OrderedMeal class. Still no change to our two methods below:
 
   def show_price
     puts "Prices:\n"
