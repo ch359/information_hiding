@@ -8,7 +8,7 @@
 
 def show_price
   puts "Prices:\n"
-  get_dishes.each { |dish| puts get_name(dish) + " " + get_price(dish)}
+  get_dishes { |dish| puts get_name(dish) + " " + get_price(dish)}
   # @order.each { |dish| puts dish[0] + " " + dish[1][0].to_s }
 end
 

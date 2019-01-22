@@ -6,7 +6,7 @@
 
 def show_price
   puts "Prices:\n"
-  get_dishes.each { |dish| puts get_name(dish) + " " + get_price(dish)}
+  get_dishes { |dish| puts get_name(dish) + " " + get_price(dish)}
   # @order.each { |dish| puts dish[0] + " " + dish[1][0].to_s } <- for comparison
 end
 
@@ -29,6 +29,9 @@ end
 private
 
 def get_dishes
+  # NB: This doesn't do anything at the moment. But it removes dependency from a specific named instance variable
+  # (we might change it in the future). It also allows us to do stuff to the instance variable (like calculations)
+  # before using it if requirements change in the future.
   @order.each
 end
 
